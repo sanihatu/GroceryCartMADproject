@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CheckoutActivity">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/backcheckout"
+        android:layout_gravity="left"
+        android:src="@drawable/back"
+        android:contentDescription="back"
+        android:background="#00FFFFFF"
+        />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="30dp"-->
+<!--        app:cardCornerRadius="30dp"-->
+<!--        android:elevation="20dp"-->
+<!--        android:background="@color/white">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/amatica_sc_bold"
+                android:gravity="center_horizontal"
+                android:text="Please Fill all Details"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullnamebook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/person"
+                android:fontFamily="@font/baskervville"
+                android:hint="Full Name"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addressbook"
+                android:hint="Address"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/baskervville"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/location"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/pincodebook"
+                android:hint="Pincode"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="phone"
+                android:fontFamily="@font/baskervville"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/pincode"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/contactnobook"
+                android:hint="Contact Number"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/baskervville"
+                android:inputType="phone"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittextbackground"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="TOTAL AMOUNT:"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/totalamtcheck"
+                    android:textSize="20dp"
+                    android:text="100"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/ordernowbook"
+                android:layout_marginTop="10dp"
+                android:text="ORDER NOW"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/edittextbackground"
+                android:backgroundTint="@color/black"
+                />
+
+        </LinearLayout>
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+
+</LinearLayout>
